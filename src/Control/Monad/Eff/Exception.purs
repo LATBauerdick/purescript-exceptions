@@ -15,7 +15,7 @@ module Control.Monad.Eff.Exception
 
 import Prelude
 
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (Eff, kind Effect)
 
 import Data.Either (Either(..))
 import Data.Maybe (Maybe(..))
