@@ -24,7 +24,7 @@ import Data.Maybe (Maybe(..))
 foreign import data EXCEPTION :: !
 
 -- | The type of JavaScript errors
-foreign import data Error :: *
+foreign import data Error :: Effect
 
 instance showError :: Show Error where
   show = showErrorImpl
