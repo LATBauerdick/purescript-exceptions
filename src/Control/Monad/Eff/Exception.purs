@@ -21,10 +21,10 @@ import Data.Either (Either(..))
 import Data.Maybe (Maybe(..))
 
 -- | This effect is used to annotate code which possibly throws exceptions
-foreign import data EXCEPTION :: !
+foreign import data EXCEPTION :: Effect
 
 -- | The type of JavaScript errors
-foreign import data Error :: Effect
+foreign import data Error :: *
 
 instance showError :: Show Error where
   show = showErrorImpl
